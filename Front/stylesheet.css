@@ -1,0 +1,96 @@
+:root {
+    --color-1:#ccc;
+    --color-3:#307030;
+    --color-4:#1e1e1e;
+    
+}
+* {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    user-select: none;
+    font-size: 120%;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+.send-box {
+    left: auto;
+    right: auto;
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    bottom: 15px;
+    padding: 5px;
+    position: absolute;
+    width:90% ;
+    max-width: 700px;
+}
+#main-div {
+    margin-top: 10px;
+    background-color: var(--color-1);
+    margin: auto;
+    height: 1200px;
+    width: 90%;
+    max-width: 700px;
+}
+#msg {
+    width: calc(90% - 20px);
+    height: 400%;
+    resize: none;
+    background-color: var(--color-1);
+    text-align: left;
+    padding-left:5px ;
+}
+#send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 400%;
+    background-color: var(--color-3);
+    color: var(--color-1);
+    bottom: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#send:hover {
+    opacity: 0.8;
+}
+#send:active {
+    transform: scale(0.9);
+}
+.received {
+    padding: 2px 6px;
+    color: var(--color-1);
+    text-align: left;
+    margin:0 5px 5px 5px;
+    background-color: var(--color-4);
+    align-self: flex-start;
+}
+form {
+    width: 100%;
+    padding: none;
+    margin: none;
+}
+.sent {
+    padding: 2px 20px;
+    color: var(--color-1);
+    text-align: left;
+    margin:5px 5px 5px 0;
+    background-color: var(--color-3);
+    display: inline-block;
+}
+.sub1 {
+    display: flex;
+    justify-content: right;
+}
+.sub2 {
+    display: flex;
+    justify-content: left;
+}
+
+#chat-box {
+    height: 700px;
+    flex-direction: column;
+    overflow-y:auto;
+}
